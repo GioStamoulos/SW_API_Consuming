@@ -1,0 +1,66 @@
+Try 1:
+(env) C:\Users\giorgos\Desktop\EXSD_API>py main.py search "luke sky"
+
+Name: Luke Skywalker
+Height: 172
+Mass: 77
+Birth Year: 19BBY
+
+catched: 2022-02-22 18:06:51.309932
+0:00:01.283697 time of search 
+-------------------------------------------------------------------------------
+Try 2:
+(env) C:\Users\giorgos\Desktop\EXSD_API>py main.py search "luke sky" --world
+Name: Luke Skywalker
+Height: 172
+Mass: 77
+Birth Year: 19BBY
+
+Homeworld
+---------
+Name: Tatooine
+Population: 200000
+
+On Tatooine 1 year on earth is 0.83 years and 1 day 0.96 days
+0:00:02.543384 time of search
+-------------------------------------------------------------------------------
+Try3:
+(env) C:\Users\giorgos\Desktop\EXSD_API>py main.py search "C-3PO"
+Name: C-3PO
+Height: 167
+Mass: 75
+Birth Year: 112BBY
+
+0:00:03.154959 time of search
+
+-------------------------------------------------------------------------------
+Try4:
+(env) C:\Users\giorgos\Desktop\EXSD_API>py main.py search "C-3PO" --world
+Name: C-3PO
+Height: 167
+Mass: 75
+Birth Year: 112BBY
+
+Homeworld
+---------
+Name: Tatooine
+Population: 200000
+
+On Tatooine 1 year on earth is 0.83 years and 1 day 0.96 days
+0:00:05.036686 time of search
+----------------------------------------------------------------------
+Try5:
+Name: C-3PO
+Height: 167
+Mass: 75
+Birth Year: 112BBY
+
+Homeworld
+---------
+Name: Tatooine
+Population: 200000
+
+On Tatooine 1 year on earth is 0.83 years and 1 day 0.96 days
+catched: 2022-02-22 18:13:29.451950
+0:00:06.138196 time of search
+

@@ -12,7 +12,7 @@ class parse_admin:
 
         # Add long and short argument
         parser.add_argument("action", nargs='?', const='', help="set action", type= str)
-        parser.add_argument("query", nargs='?', const='', help="set query", type= str )
+        parser.add_argument('query', nargs='?', const='', help="set query", type= str )
         parser.add_argument('--world', nargs='?', const='')
         parser.add_argument('--clean', nargs='?', const='')
         
@@ -27,11 +27,6 @@ class parse_admin:
         if args.action == 'search':            
             if args.query!='':
                 found = False
-
-                #venv problem check
-                if args.query[-1]=="'" and args.query[0]=="'":
-                    args.query = args.query[1:-1]
-                print(args.query)
                 for i in range(len(name_list)):    
                     if str(args.query.lower()) in name_list[i]:
                         found = True
